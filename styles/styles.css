@@ -23,8 +23,8 @@
   --footer-text-color: var(--background-color);
 
   /* fonts */
-  --body-font-family: 'PT Serif', serif;
-  --heading-font-family: 'Playfair Display', serif;
+  --body-font-family: 'Le Monde Livre', serif;
+  --heading-font-family: 'Koning Display', serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
