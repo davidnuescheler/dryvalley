@@ -12,14 +12,21 @@
 
  :root {
   /* colors */
-  --link-color: #781D15;
-  --link-hover-color: #136ff6;
-  --background-color: #F1E9D8;
-  --overlay-background-color: #808D6E;
-  --highlight-background-color: #DEC39F;
+  --color-sangria: #701723;
+  --color-sandstone: #d5866b;
+  --color-sunrise: #d7a897;
+  --color-sage: #b2b184;
+  --color-stucco: #f1ebdf;
+  --color-moonglow: #e5cbb5;
+
+  --link-color: var(--color-sangria);
+  --link-hover-color: var(--color-sangria);
+  --background-color: var(--color-stucco);
+  --overlay-background-color: var(--color-sage);
+  --highlight-background-color: var(--color-sunrise);
   --nav-background-color: var(--background-color);
-  --nav-text-color: #781D15;
-  --text-color: #CA7357;
+  --nav-text-color: var(--color-sangria);
+  --text-color: var(--color-sandstone);
   --footer-text-color: var(--background-color);
 
   /* fonts */
