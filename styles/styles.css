@@ -207,6 +207,11 @@ main img {
   height: auto;
 }
 
+.icon svg {
+  fill: currentColor;
+  height: 48px;
+}
+
 @media (min-width: 600px) {
   main .section {
     padding: 64px 32px;
