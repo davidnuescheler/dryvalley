@@ -20,6 +20,7 @@
   --nav-background-color: var(--background-color);
   --nav-text-color: #781D15;
   --text-color: #CA7357;
+  --footer-text-color: var(--background-color);
 
   /* fonts */
   --body-font-family: 'PT Serif', serif;
