@@ -12,16 +12,18 @@
 
  :root {
   /* colors */
-  --link-color: #035fe6;
+  --link-color: #781D15;
   --link-hover-color: #136ff6;
-  --background-color: #fff;
-  --overlay-background-color: #eee;
-  --highlight-background-color: #ccc;
-  --text-color: #000;
+  --background-color: #F1E9D8;
+  --overlay-background-color: #808D6E;
+  --highlight-background-color: #DEC39F;
+  --nav-background-color: var(--background-color);
+  --nav-text-color: #781D15;
+  --text-color: #CA7357;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-  --heading-font-family: var(--body-font-family);
+  --body-font-family: 'PT Serif', serif;
+  --heading-font-family: 'Playfair Display', serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */

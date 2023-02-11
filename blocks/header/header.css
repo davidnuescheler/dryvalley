@@ -14,8 +14,9 @@ header nav {
   width: 100%;
   height: var(--nav-height);
   padding: 0 1rem;
-  background-color: var(--background-color);
+  background-color: var(--nav-background-color);
   font-family: var(--body-font-family);
+  color: var(--nav-text-color);
 }
 
 header nav[aria-expanded=true] {
