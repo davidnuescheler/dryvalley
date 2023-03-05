@@ -145,8 +145,10 @@ header .nav-brand {
 }
 
 header nav .nav-brand img, header nav .nav-brand .icon svg {
-  height: 50px;
+  height: 30px;
   width: auto;
+  fill: var(--color-sangria);
+  color:   var(--color-sangria);
 }
 
 /* sections */

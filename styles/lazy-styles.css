@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+
 @font-face {
-    font-family: 'Le Monde Livre';
-    src: url('./libre-baskerville-regular.ttf') format('truetype');
+    font-family: 'Koning Display';
+    src: url('./koning-display-semi-bold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Koning Display';
-    src: url('./koho-bold.ttf') format('truetype');
+    font-style: italic;
+    src: url('./koning-display-semi-bold-italic.woff2') format('woff2');
 }

@@ -30,8 +30,8 @@
   --footer-text-color: var(--background-color);
 
   /* fonts */
-  --body-font-family: 'Le Monde Livre', serif;
-  --heading-font-family: 'Koning Display', serif;
+  --body-font-family: 'Nanum Myeongjo', serif;
+  --heading-font-family: 'Koning Display', sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
