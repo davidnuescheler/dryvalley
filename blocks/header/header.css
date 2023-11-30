@@ -142,6 +142,10 @@ header .nav-brand {
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--heading-font-family);
 }
 
 header nav .nav-brand img, header nav .nav-brand .icon svg {
