@@ -40,9 +40,11 @@ export default function decorate(block) {
   });
   block.parentElement.append(buttons);
 
-  setInterval(() => {
-    const selected = buttons.querySelector('.selected');
-    const next = selected.nextElementSibling || selected.parentElement.firstElementChild;
-    next.click();
-  }, 5000);
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    setInterval(() => {
+      const selected = buttons.querySelector('.selected');
+      const next = selected.nextElementSibling || selected.parentElement.firstElementChild;
+      next.click();
+    }, 5000);
+  }
 }
