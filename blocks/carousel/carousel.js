@@ -39,4 +39,10 @@ export default function decorate(block) {
     io.observe(row);
   });
   block.parentElement.append(buttons);
+
+  setInterval(() => {
+    const selected = buttons.querySelector('.selected');
+    const next = selected.nextElementSibling || selected.parentElement.firstElementChild;
+    next.click();
+  }, 5000);
 }
