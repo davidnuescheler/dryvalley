@@ -31,6 +31,7 @@ export default function decorate(block) {
     });
     /* buttons */
     const button = document.createElement('button');
+    button.ariaLabel = `Slide ${i + 1}`;
     if (!i) button.classList.add('selected');
     button.addEventListener('click', () => {
       scrollToSlide(i);

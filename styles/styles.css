@@ -13,10 +13,12 @@
  :root {
   /* colors */
   --color-sangria: #701723;
-  --color-sandstone: #d5866b;
+  --color-sandstone: #b5664c;
   --color-sunrise: #d7a897;
   --color-sage: #b2b184;
+  --color-sage-dark: #7c7c63;
   --color-stucco: #f1ebdf;
+  --color-stucco-light: #fff7f6;
   --color-moonglow: #e5cbb5;
 
   --link-color: var(--color-sangria);
@@ -24,9 +26,9 @@
   --background-color: var(--color-stucco);
   --overlay-background-color: var(--color-sage);
   --highlight-background-color: var(--color-sunrise);
-  --nav-background-color: var(--background-color);
+  --nav-background-color: var(--color-stucco);
   --nav-text-color: var(--color-sangria);
-  --text-color: var(--color-sandstone);
+  --text-color: var(--color-sangria);
   --footer-text-color: var(--background-color);
 
   /* fonts */

@@ -66,12 +66,13 @@ main .carousel-container {
   
   main .carousel-buttons button {
     display: block;
-    height: 10px;
-    width: 10px;
+    height: 22px;
+    width: 22px;
     padding: 0;
     margin: 5px;
-    border-radius: 5px;
     background-color: var(--highlight-background-color);
+    box-sizing: border-box;
+    clip-path: circle(5px);
   }
   
   main .carousel-buttons button.selected {
