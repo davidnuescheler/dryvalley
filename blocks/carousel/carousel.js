@@ -42,10 +42,13 @@ export default function decorate(block) {
   block.parentElement.append(buttons);
 
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    setInterval(() => {
+    const autoplay = setInterval(() => {
       const selected = buttons.querySelector('.selected');
       const next = selected.nextElementSibling || selected.parentElement.firstElementChild;
       next.click();
     }, 5000);
+
+    block.parentElement.addEventListener('mousedown', () => clearInterval(autoplay));
+    block.parentElement.addEventListener('touchstart', () => clearInterval(autoplay));
   }
 }

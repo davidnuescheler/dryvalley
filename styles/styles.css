@@ -68,6 +68,11 @@ body.appear {
   display: unset;
 }
 
+header nav, main, footer {
+  max-width: 1200px;
+  margin: auto;
+}
+
 header {
   height: var(--nav-height);
 }
@@ -176,6 +181,7 @@ main input:hover {
 
 main .section {
   padding: 64px 16px;
+  background-color: var(--background-color);
 }
 
 main pre {
@@ -252,3 +258,34 @@ main .section[data-section-status='initialized'] {
 main .section.highlight {
   background-color: var(--highlight-background-color);
 }
+
+main .section[data-background] {
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  background-color: unset;
+  z-index: -1;
+}
+
+main picture.section-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transform: translateZ(-0.5px) scale(1.5);
+}
+
+main picture.section-background img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  perspective: 2px;
+  overflow-y: auto;
+  height: 100vh;
+}
+

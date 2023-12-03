@@ -11,6 +11,7 @@ import {
   waitForLCP,
   loadBlocks,
   loadCSS,
+  createOptimizedPicture,
 } from './lib-franklin.js';
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
@@ -40,6 +41,15 @@ function buildAutoBlocks(main) {
   }
 }
 
+function decorateSectionBackgrounds(main) {
+  main.querySelectorAll('.section[data-background]').forEach((section) => {
+    const bg = section.dataset.background;
+    const picture = createOptimizedPicture(bg);
+    picture.classList.add('section-background');
+    section.prepend(picture);
+  });
+};
+
 /**
  * Decorates the main element.
  * @param {Element} main The main element
@@ -52,6 +62,7 @@ export function decorateMain(main) {
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
+  decorateSectionBackgrounds(main);
 }
 
 /**
