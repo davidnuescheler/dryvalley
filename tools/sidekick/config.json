@@ -1,5 +1,7 @@
 {
     "project": "Dry Valley",
-    "host": "www.dryvalley.land"
+    "host": "www.dryvalley.land",
+    "reviewHost": "main--dryvalley--davidnuescheler.aem.page",
+    "liveHost": "main--dryvalley--davidnuescheler.aem.live"
   }
   
