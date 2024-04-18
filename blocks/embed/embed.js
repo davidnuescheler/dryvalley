@@ -55,6 +55,11 @@ const embedTwitter = (url) => {
   return embedHTML;
 };
 
+const embedAirBnB = (url) => {
+  loadScript('https://www.airbnb.com/embeddable/airbnb_jssdk');
+  return `<div class="airbnb-embed-frame" data-id="1100932861710202336" data-view="home" data-hide-price="true" style="width: 450px; height: 300px; margin: auto;"><a href="source=embed_widget">View On Airbnb</a><a href="https://www.airbnb.com/rooms/1100932861710202336?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Home in Cannonville · ★New · 2 bedrooms · 3 beds · 1 bath</a><script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script></div>`
+}
+
 const loadEmbed = (block, link, autoplay) => {
   if (block.classList.contains('embed-is-loaded')) {
     return;
@@ -72,6 +77,10 @@ const loadEmbed = (block, link, autoplay) => {
     {
       match: ['twitter'],
       embed: embedTwitter,
+    },
+    {
+      match: ['airbnb'],
+      embed: embedAirBnB,
     },
   ];
 
