@@ -1,0 +1,19 @@
+.logos-wrapper {
+    overflow-x: scroll;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logos img {
+    width: 80px;
+}
+
+.logos > div {
+    flex-shrink: 0;
+    width: 100px;
+}

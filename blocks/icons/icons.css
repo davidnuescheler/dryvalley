@@ -1,0 +1,33 @@
+.icons > div {
+    display: grid;
+    text-align: left;
+    grid-gap: 16px;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.icons > div img {
+    width: 60px;
+}
+
+.icons .icons-icon {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    flex: 1 0 0;
+}
+
+.icons > div > div {
+    flex: 1 0 0;
+}
+
+.icons h2, .icons h3 {
+    margin-top: 0;
+    font-size: var(--heading-font-size-s);
+}
+
+.icons p {
+    margin: 0;
+    font-size: var(--body-font-size-s);
+}
