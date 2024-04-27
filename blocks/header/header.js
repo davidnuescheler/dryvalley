@@ -1,4 +1,4 @@
-import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
+import { readBlockConfig, decorateIcons, decorateButtons } from '../../scripts/lib-franklin.js';
 
 // media query match that indicates mobile/tablet width
 const MQ = window.matchMedia('(min-width: 900px)');
@@ -124,6 +124,9 @@ export default async function decorate(block) {
         });
       });
     }
+
+    const tools = nav.querySelector('.nav-tools');
+    decorateButtons(tools);
 
     // hamburger for mobile
     const hamburger = document.createElement('div');
