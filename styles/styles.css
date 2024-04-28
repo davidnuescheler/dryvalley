@@ -15,7 +15,9 @@
   --color-sangria: #701723;
   --color-sandstone: #b5664c;
   --color-sunrise: #d7a897;
+  --color-sunrise-light: #e7b8a7;
   --color-sage: #b2b184;
+  --color-sage-light: #c2c194;
   --color-sage-dark: #7c7c63;
   --color-stucco: #f1ebdf;
   --color-stucco-light: #fff7f6;
@@ -24,8 +26,8 @@
   --link-color: var(--color-sangria);
   --link-hover-color: var(--color-sangria);
   --background-color: var(--color-stucco);
-  --overlay-background-color: var(--color-sage);
-  --highlight-background-color: var(--color-sunrise);
+  --overlay-background-color: var(--color-sage-light);
+  --highlight-background-color: var(--color-sunrise-light);
   --nav-background-color: var(--color-stucco);
   --nav-text-color: var(--color-sangria);
   --text-color: var(--color-sangria);
@@ -95,6 +97,10 @@ h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
+h1, h2 {
+  text-transform: uppercase;
+}
+
 p, dl, ol, ul, pre, blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -126,7 +132,7 @@ pre {
 /* buttons */
 
 a.button:any-link, button {
-  font-family: var(--body-font-family);
+  font-family: var(--heading-font-family);
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
@@ -142,6 +148,7 @@ a.button:any-link, button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-transform: uppercase;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
